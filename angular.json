@@ -59,6 +59,12 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "port": 7003,
+            "ssl": true,
+            "sslCert": "./localhost.pem",
+            "sslKey": "./localhost-key.pem"
+          },
           "configurations": {
             "production": {
               "buildTarget": "angular-canada-login:build:production"
